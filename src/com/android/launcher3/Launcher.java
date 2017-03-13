@@ -3236,6 +3236,7 @@ public class Launcher extends Activity
             getWindow().getDecorView()
                     .sendAccessibilityEvent(AccessibilityEvent.TYPE_WINDOW_STATE_CHANGED);
         }
+        mWorkspace.updateQsbVisibility();
         return changed;
     }
 
