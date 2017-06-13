@@ -2664,10 +2664,10 @@ public class Launcher extends Activity
             return;
         }
 
-        /*String pickerPackage = getString(R.string.wallpaper_picker_package);
-        if (TextUtils.isEmpty(pickerPackage)) {
+        String pickerPackage = getString(R.string.wallpaper_picker_package);
+        if (TextUtils.isEmpty(pickerPackage) || !PackageManagerHelper.isAppEnabled(getPackageManager(), pickerPackage)) {
             pickerPackage =  PackageManagerHelper.getWallpaperPickerPackage(getPackageManager());
-        }*/
+        }
 
         int pageScroll = mWorkspace.getScrollForPage(mWorkspace.getPageNearestToCenterOfScreen());
         float offset = mWorkspace.mWallpaperOffset.wallpaperOffsetForScroll(pageScroll);
