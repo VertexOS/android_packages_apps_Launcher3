@@ -70,7 +70,7 @@
 
     <!-- Name of a subclass of com.android.launcher3.AppFilter used to
          filter the activities shown in the launcher. Can be empty. -->
-    <string name="app_filter_class" translatable="false"></string>
+    <string name="app_filter_class" translatable="false">com.android.launcher3.NexusAppFilter</string>
 
     <!-- List of package names that com.android.launcher3.action.LAUNCH
      should be targeting. Can be empty. -->
